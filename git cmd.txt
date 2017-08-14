@@ -1,0 +1,56 @@
+git 修改当前的project的用户名的命令为：git config user.name 你的目标用户名;
+git 修改当前的project提交邮箱的命令为：git config user.email 你的目标邮箱名;
+git commit --amend  //修改已经提交的commit的注释
+
+git clone http://-----------------
+
+git init
+git log
+git log --stat
+git diff
+git status
+git checkout id1
+git diff id1 id2cd ~
+cd ..
+ls
+ls -a
+git add file.cpp
+git config --global core.editor vim
+git diff //直接对比暂存区和工作区间的文件修改内容
+git diff --staged//对比暂存区和最近commit的修改
+git reset --hard
+git branch//查看当前分支
+git breanch easy-mode//创建一个分支
+git branch
+git checkout easy-mode//切换分支
+git branch --graph 
+		   --oneline	
+				 master easy-mode为了直观地查看提交历史记录而键入的完整命令是
+git branch
+git branch coins 创建branch
+git checkout branchid
+
+有关 git merge 的说明
+git merge 还将在合并的版本中包含当前检出的分支。因此，如果检出了 branch1，并且运行 git merge branch2 branch3，则合并的版本会将 branch1 以及 branch2 和 branch3 组合起来。由于在你进行合并提交后 branch1 标签将会更新，因此，你不想将 branch1 中的更改包含在合并中是不可能的。有鉴于此，在合并之前应始终检出你打算合并的两个分支之一。应检出哪个分支取决于你想让哪个分支标签指向新的提交。
+
+由于检出的分支始终包含在合并中，因此，你可能已猜到，在合并两个分支时，无需在命令行上将两者都指定为 git merge 的参数。如果想将 branch2 合并到 branch1 中，只需键入 git checkout branch1，然后键入 git merge branch2 即可。键入 git merge branch1 branch2 的唯一原因是，它能帮助你对要合并的分支更加心中有数。
+
+另外，由于是合并两个分支，因此在命令行中按何顺序键入分支并不重要。关键是要记住，git merge 始终将所有指定的分支合并到当前检出的分支中，并为该分支新建一个提交。
+
+将提交与所在分支进行对比的命令是 git show commit_id
+
+git merge master coins   合并coins分支到master分支里
+git show
+
+
+git init
+git status //查看本地文件
+git add --all //一次性添加所有文件到缓存区
+git remote add origin https://github.com/BlueMouseHaoHao/GitTest.git
+git remote
+git remote -v
+git push origin master  将本地代码库的master推送到远程代码库上
+在远程代码库上修改了代码库文件后，可以
+git pull origin master  将远程代码库的拉取到本的代码库
+
+
